@@ -7,7 +7,7 @@ package phoneList;
  *   - Contact's Name
  *   - Contact's Phone Number
  *   
- * Needed Methods
+ * Needed Methods	
  *   - Constructor(s)
  *   - getter methods
  *   - Setter methods not necessary unless Constructor
@@ -17,8 +17,30 @@ package phoneList;
  * 
  */
 
-
-
 public class Contact {
+
+	private int phone;
+	private String name;
+
+	public Contact(String name, int phone) {
+
+		this.phone = phone;
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getPhone() {
+		return phone;
+	}
+
+	@Override
+	public String toString() {
+		return "Name: " + name 
+			 + "\nPhone: " + phone;
+
+	}
 
 }
